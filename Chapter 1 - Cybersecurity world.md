@@ -1,21 +1,17 @@
-<style>
-summary { 
-    font-size: 25px
-}
-</style>
+ Chapter 1 Cybersecurity - A World of Experts and Criminals
 
-# H1 : Een wereld vanexperten en criminelen
+# 1.0 Introduction
 
-<details>
-<summary>Criminelen vs. specialisten</summary>
+## 1.0.1 Welcome
 
-- types hackers :
+### 1.0.1.1 Chapter 1: Cybersecurity - A World of Experts and Criminals
 
-  - white hat : hackers breken in op netwerken of computersystemen om zwakke punten te ontdekken en zo de beveiliging van deze systemen te verbeteren.
-  - grey hat : hackers bevinden zich ergens tussen de 2 andere types aanvallers. Deze aanvallers kunnen een kwetsbaarheid vinden en deze melden aan de eigenaren van het systeem als die actie samenvalt met hun agenda.
-  - black hat : hackers zijn onethische criminelen die de computer-en netwerkbeveiliging schenden voor persoonlijk gewin of om kwaadaardige redenen, zoals het aanvallen van netwerken.12
+# 1.1 The Cybersecurity World
 
-- types criminelen :
+# 1.2 Cybersecurity Criminals versus Cybersecurity Specialists
+
+
+### 1.2.1Who Are the Cyber Criminals?
 
   - Script Kiddies : meestal tieners of hobbyisten, aanvallen meestal
     beperkt tot grappen en vandalisme. Ze hebben weinig of geen vaardigheid
@@ -29,7 +25,13 @@ summary {
   - Door de staat gesponsorde hackers : Afhankelijk van het perspectief van een persoon,
     zijn dit ofwel white hat ofwel black hat hackers.
 
-- acties tegen cybercrime :
+### 1.2.2 What Color is My Hat?
+
+  - white hat : hackers breken in op netwerken of computersystemen om zwakke punten te ontdekken en zo de beveiliging van deze systemen te verbeteren.
+  - grey hat : hackers bevinden zich ergens tussen de 2 andere types aanvallers. Deze aanvallers kunnen een kwetsbaarheid vinden en deze melden aan de eigenaren van het systeem als die actie samenvalt met hun agenda.
+  - black hat : hackers zijn onethische criminelen die de computer-en netwerkbeveiliging schenden voor persoonlijk gewin of om kwaadaardige redenen, zoals het aanvallen van netwerken.12
+
+### 1.2.3 Thwarting Cyber Criminals
 
   - Vulnerability Databases : publicly available databases of known vulnerabilities
   - Early warning systems
@@ -37,12 +39,8 @@ summary {
     collaboration
   - ISM normen : standards and norms for information security management
 
-</details>
 
-<details>
-<summary>Typische cyberaanvallen</summary>
-
-threats and vulnerabilities :
+# 1.3 Common Threats
 
 - **cybersecurity threat** = possibilty that a harmful event like an attach takes place
 - **cyber vulnerability** = a weakness which makes something a target for attacks
@@ -56,10 +54,9 @@ targets :
   - false messaging inside a network
   - big industries - eg. SCADA (supervisory control and data acquisition) to meausre machines and industrial equipment
 
-</details>
+# 1.4 Spreading Cybersecurity Threats
 
-<details>
-<summary>Verspreiding van cyberaanvallen</summary>
+## 1.4.1 How Threats Spread
 
 - **internal attacks** : comes from internal users (accident or malicious)
 - **external attacks**
@@ -68,17 +65,14 @@ targets :
 - **IOT**
 - **big data** : volume velocity versatility
 
-advanced weapons :
+## 1.4.2 Threat Complexity
 
 - **APT** (advanced persistent threat) = a continuos hack taking place under the radar
 - **algorithm attacks** = can use self-reporting information such as energy usage and use that info to select targets or generate false warnings
 - intelligent selection of victims
 - **federatief identiteitsbeheer** = use same login for all networks | extra secured by adding an authorised device to login
 
-</details>
-
-<details>
-<summary>Nood aan experten</summary>
+# 1.5 Creating More Experts
 
 **NIST framework** (national institute of standards and technologies) = enables companies to identify most important cyber security responsibilities and skills.
 **Workforce Framework** divides cybersecurity work into 7 areas
@@ -98,6 +92,21 @@ advanced weapons :
   inkomende cyberbeveiligingsinformatie om te bepalen of deze nuttig is voor inlichtingen.
 - **Oversight and Development** voorziet in leiderschap, management en richting om cyberveiligheid
   effectief uit te voeren.
-- \*_Securely Provision_ omvat het conceptualiseren, ontwerpen en bouwen van veilige IT-systemen.
+- _Securely Provision_ omvat het conceptualiseren, ontwerpen en bouwen van veilige IT-systemen.
 
-</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 
+
