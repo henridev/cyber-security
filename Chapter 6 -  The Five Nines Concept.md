@@ -1,73 +1,69 @@
 # Chapter 6 The Five Nines Concept
 
-## 6.0 Introduction
+## Introduction
 
-Organizations that want to maximize the availability of their systems and data may take extraordinary measures to minimize or eliminate data loss. The goal is to minimize the downtime of mission critical processes. If employees cannot perform their regular duties, the organization is in jeopardy of losing revenue.
+Organizations  want to **maximize availability of systems and data**  =>  measures to minimize or eliminate data loss and to minimize the downtime of mission critical processes because if employees cannot perform their regular duties, the organization is in jeopardy of losing revenue.
 
-Organizations measure availability by percentage of uptime. 
+Organizations measure availability by percentage of **uptime**. 
 
-- This chapter begins by explaining the **concept of five nines**. Many industries must maintain the highest availability standards because downtime might literally mean a difference between life and death.
+- **concept of five nines**. Many industries must maintain the highest availability 
 - This chapter discusses various approaches that organizations can take to help meet their **availability** goals. **Redundancy** provides backup and includes extra components for computers or network systems to ensure the systems remain available. Redundant components can include hardware such as disk drives, servers, switches, and routers or software such as operating systems, applications, and databases. 
 - The chapter also discusses **resiliency**, the ability of a server, network, or data center to recover quickly and continue operation.
 
-Organizations must be prepared to respond to an incident by establishing procedures that they follow after an event occurs. The chapter concludes with a discussion of **disaster recovery** and **business continuity** planning which are both critical in maintaining availability to an organization’s resources.
+- Organizations must be prepared to respond to an incident by establishing procedures that they follow after an event occurs. The chapter concludes with a discussion of **disaster recovery** and **business continuity** planning which are both critical in maintaining availability to an organization’s resources.
 
-## 6.1 High Availability
+## 1 High Availability
 
-### 6.1.1 The Five Nines
+### The Five Nines
 
-#### 6.1.1.1 What Does the Five Nines Mean?
-
-- Systemen en services have a 99,999% uptime 
-- downtime around 5 min per year
+System and services have a 99,999% uptime and thus a downtime of around 5 min per year
 
 **High availability** refers to a system or component that is continuously operational for a given length of time. To help ensure high availability:
 
 - Eliminate **single points of failure**
-
-- Design for reliability
+- Design for **reliability**
 - **monitor** systems
-
 - **Detect** failures as they occur
+- put in place **redundancy ** and **backups**
 
 Sustaining high availability at the standard of five-nines 
 
-- can increase costs and utilize many resources. The increased costs are due to the purchase of additional hardware such as servers and components. As an organization adds components, the result is an increase in configuration complexity. 
-- increased configuration complexity increases the risk factors. The more moving parts involved, the higher the likelihood of failed components.
+- **can increase costs and utilize many resources.** The increased costs are due to the purchase of additional hardware such as servers and components. As an organization adds components, the result is an increase in **configuration complexity**. 
+- increased configuration complexity **increases the risk factors.** The more moving parts involved, the higher the likelihood of failed components.
 
-#### 6.1.1.2 Designing High Availability System
+#### Designing High Availability System
 
 Although the cost of sustaining high availability may be too costly for some industries, several environments require five nines.
 
 High availability incorporates three major principles to achieve the goal of uninterrupted access to data and services:
 
-- Elimination or reduction of single-points of failure
-- System Resiliency = ability to maintain availability during disruptive events
-- Fault Tolerance = continue operating if one or more components fail 
+- Elimination or reduction of **single-points of failure**
+- **System Resiliency** = ability to maintain availability during disruptive events
+- **Fault Tolerance** = continue operating if one or more components fail 
 
 It is important to understand the ways to address a single point of failure. A single point of failure can include central routers or switches, network services, and even highly skilled IT staff. The key is that a loss of the system, process, or person can have a very disruptive impact on the entire system. The key is to have processes, resources, and components that reduce single points of failure. High availability clusters is one way to provide redundancy. These clusters consist of a group of computers that have access to the same-shared storage and have identical network configurations. All servers take part in processing a service simultaneously. From the outside, the server group looks like one device. If a server within the cluster fails, the other servers continue to process the same service as the failed device.
 
-Systems resiliency refers to the capability to maintain availability of data and operational processing despite attacks or disrupting event. Generally, this requires redundant systems, in terms of both power and processing, so that should one system fail, the other can take over operations without any break in service. System resiliency is more than hardening devices; it requires that both data and services be available even when under attack.
+**Systems resiliency** refers to the capability to maintain availability of data and operational processing despite attacks or disrupting event. Generally, this requires redundant systems, in terms of both power and processing, so that should one system fail, the other can take over operations without any break in service. System resiliency is more than hardening devices; it requires that both data and services be available even when under attack.
 
-Fault tolerance enables a system to continue to operate if one or more components fail. Data mirroring is one example of fault tolerance. Should a "fault" occur, causing disruption in a device such as a disk controller, the mirrored system provides the requested data with no apparent interruption in service to the user.
+**Fault tolerance** enables a system to continue to operate if one or more components fail. Data mirroring is one example of fault tolerance. Should a "fault" occur, causing disruption in a device such as a disk controller, the mirrored system provides the requested data with no apparent interruption in service to the user.
 
-## 6.2 Measures to Improve Availability
+## 2 Measures to Improve Availability
 
-### 6.2.1 Asset Management
+### 2.1 Asset Management
 
-#### 6.2.1.1 Asset Identification
+#### Asset Identification
 
-An organization needs to know what *hardware and software* are present as a prerequisite to knowing what the configuration parameters need to be. Asset management includes a complete inventory of hardware and software.
+An organization needs to **know what hardware and software** are present as a prerequisite to knowing what the configuration parameters need to be. Asset management includes a complete **inventory of hardware and software**.
 
-This means that the organization needs to know all of components that can be subject to security risks, including:
+This means that the **organization needs to know all of components that can be subject to security risks,** including:
 
 hardware system, operating system, hardware network device, network device operating system, software application, All firmware, All language runtime environments, All individual libraries
 
-An organization may choose an *automated solution* to keep track of assets. An administrator should investigate any changed configuration because it may mean that the configuration is not up-to-date. It can also mean that unauthorized changes are happening.
+**An organization may choose an automated solution to keep track of assets.** An administrator should investigate any changed configuration because it may mean that the configuration is not up-to-date. It can also mean that unauthorized changes are happening.
 
-#### 6.2.1.2 Asset Classification
+#### Asset Classification
 
-assigns all resources of an organization into a group based on common characteristics. An organization should apply an asset classification system to documents, data records, data files, and disks. The most critical information needs to receive the highest level of protection and may even require special handling. An organization can adopt a labeling system according to how valuable, how sensitive, and how critical the information is. Complete the following steps to identify and classify the assets of an organization:
+assigns all resources of an **organization into a group based on common characteristics.** An organization should apply an asset classification system to documents, data records, data files, and disks. The most critical information needs to receive the highest level of protection and may even require special handling. An organization can adopt a labeling system according to how valuable, how sensitive, and how critical the information is. Complete the following steps to identify and classify the assets of an organization:
 
 - Determine the proper asset identification category.
 - Establish asset accountability by identifying the owner for all information assets and application software.
@@ -78,13 +74,13 @@ For example, the U.S. government uses sensitivity to classify data as follows: t
 
 Asset management manages the lifecycle and inventory of technology assets including devices and software. As part of an IT asset management system, an organization specifies the acceptable IT assets that meet its objectives. This practice effectively reduces the different asset types. For example, an organization will only install applications that meet its guidelines. When administrators eliminate applications that do not meet the guidelines, they are effectively increasing security.
 
-#### 6.2.1.3 Asset Standardization
+#### Asset Standardization
 
 identify specific hardware and software products that the organization uses and supports. When a failure occurs, prompt action helps to maintain both access and security. If an organization does not standardize its hardware selection, personnel may need to scramble to find a replacement component. Non-standard environments require more expertise to manage and they increase the cost of maintenance contracts and inventory.
 
 The United States Computer Emergency Readiness Team (US-CERT) and the U.S. Department of Homeland Security sponsor a dictionary of **common vulnerabilities and exposure (CVE)**. CVE contains a standard identifier number with a brief description, and references to related vulnerability reports and advisories. The MITRE Corporation maintains the CVE List and its public website.
 
-#### 6.2.1.4 Threat Identification
+#### Threat Identification
 
 begins with the process of creating a CVE Identifier for publicly known cybersecurity vulnerabilities. Each CVE Identifier includes the following:
 
@@ -96,7 +92,7 @@ begins with the process of creating a CVE Identifier for publicly known cybersec
 
 Click [here](http://cve.mitre.org/cve/identifiers/) to learn more about CVE Identifier
 
-#### 6.2.1.5 Risk Analysis
+#### Risk Analysis
 
 is the process of analyzing the dangers posed by natural and human-caused events to the assets of an organization.
 
@@ -109,9 +105,9 @@ is the process of analyzing the dangers posed by natural and human-caused events
 
 <img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606037013/Untitled_Diagram-Page-2_2_hbzdk1.png" width=500/>
 
-#### 6.2.1.6 Mitigation
+#### Mitigation
 
-involves r*educing the severity of the loss or the likelihood of the loss from occurring*. Many technical controls mitigate risk including authentication systems, file permissions, and firewalls. Organization and security professionals must understand that risk mitigation can have both positive and negative impact on the organization. Good risk mitigation finds a balance between the negative impact of countermeasures and controls and the benefit of risk reduction. There are four common ways to reduce risk:
+involves **reducing the severity of the loss or the likelihood of the loss from occurring**. Many technical controls mitigate risk including authentication systems, file permissions, and firewalls. Organization and security professionals must understand that risk mitigation can have both positive and negative impact on the organization. Good risk mitigation finds a balance between the negative impact of countermeasures and controls and the benefit of risk reduction. There are four common ways to reduce risk:
 
 - *Accept* the risk and periodically re-assess
 
@@ -125,54 +121,71 @@ A short-term strategy is to accept the risk necessitating the creation of contin
 
 Outsourcing services, purchasing insurance, or purchasing maintenance contracts are all examples of risk transfer. Hiring specialists to perform critical tasks to reduce risk can be a good decision and yield greater results with less long term investment. A good risk mitigation plan can include two or more strategies.
 
-### 6.2.2 Defense in Depth
+### 2.2 Defense in Depth
 
 will not provide an impenetrable cyber shield, but it will help an organization minimize risk by keeping it one-step ahead of cyber criminals.
 
-- **layering** If there is only one defense in place to protect data and information, cyber criminals have only to get around that single defense. To make sure data and information remains available, an organization must create different layers of protection. A layered approach provides the most comprehensive protection. If cyber criminals penetrate one layer, they still have to contend with several more layers with each layer being more complicated than the previous. Layering is creating a barrier of multiple defenses that coordinate together to prevent attacks. For example, an organization might store its top secret documents on a server in a building surrounded by an electronic fence.
+- **layering** 
+  - To make sure data and information remains available, an organization must create different layers of protection. A layered approach provides the most comprehensive protection. 
+  - If cyber criminals penetrate one layer, they still have to contend with several more layers with each layer being more complicated than the previous. 
+  - Layering is creating a barrier of **multiple defenses** that coordinate together to prevent attacks. 
 
-- **limiting** Limiting access to data and information reduces the possibility of a threat. An organization should restrict access so that users only have the level of access required to do their job. For example, the people in the marketing department do not need access to payroll records to perform their jobs.
+> For example, an organization might store its top secret documents on a server in a building surrounded by an electronic fence.
 
-  Technology-based solutions such as using file permissions are one way to limit access; an organization should also implement procedural measures. A procedure should be in place that prohibits an employee from removing sensitive documents from the premises.
+- **limiting** 
+  - reduces the possibility of a threat. 
+  - An organization should restrict access so that users only have the level of access required to do their job. 
 
-- **diversity** If all of the protected layers were the same, it would not be very difficult for cyber criminals to conduct a successful attack. Therefore, the layers must be different. If cyber criminals penetrate one layer, the same technique will not work on all of the other layers. Breaching one layer of security does not compromise the whole system. An organization may use different encryption algorithms or authentication systems to protect data in different states.
+> For example, the people in the marketing department do not need access to payroll records to perform their jobs.
 
+Technology-based solutions such as using file permissions are one way to limit access; an organization should also implement procedural measures. A procedure should be in place that prohibits an employee from removing sensitive documents from the premises.
+
+- **diversity** If cyber criminals penetrate one layer, the same technique will not work on all of the other layers. **Breaching one layer of security does not compromise the whole system**. An organization may use different encryption algorithms or authentication systems to protect data in different states.
 - **Obscuring** information can also protect data and information. An organization should not reveal any information that cyber criminals can use to figure out what version of the operating system a server is running or the type of equipment it uses. For example, error messages should not contain any details that cyber criminals could use to determine what vulnerabilities are present. Concealing certain types of information makes it more difficult for cyber criminals to attack a system.
-
 - **Complexity** does not necessarily guarantee security. If an organization implements complex systems that are hard to understand and troubleshoot, it may actually backfire. If employees do not understand how to configure a complex solution properly, it may make it just as easy for cyber criminals to compromise those systems. To maintain availability, a security solution should be simple from the inside, but complex on the outside.
 
-### 6.2.3 Redundancy
+### 2.3 Redundancy
 
-#### 6.2.3.1 Single Points of Failure
+#### Single Points of Failure
 
  is the weak link in the chain that can cause disruption of the organization's operations.
 
-- the solution to a single point of failure is to modify the critical operation so that it does not rely on a single element. 
+- the solution to a single point of failure is to **modify the critical operation so that it does not rely on a single element.** 
 - The organization can also build **redundant** components into the critical operation to take over the process should one of these points fail.
 
-#### 6.2.3.2 N+1 Redundancy
+#### N+1 Redundancy
 
 ensures system availability in the event of a component failure. Components (N) need to have at least one backup component (+1). For example, a car has four tires (N) and a spare tire in the trunk in case of a flat (+1).
 
 In a data center, N+1 redundancy means that the system design can withstand the loss of a component. The N refers to many different components that make up the data center including servers, power supplies, switches, and routers. The +1 is the additional component or system that is standing by ready to go if needed.
 
-An example of N+1 redundancy in a data center is a power generator that comes online when something happens to the main power source. Although an N+1 system contains redundant equipment, it is not a fully redundant system.
+>  An example of N+1 redundancy in a data center is a power generator that comes online when something happens to the main power source. Although an N+1 system contains redundant equipment, **it is not a fully redundant system**.
 
-#### 6.2.3.3 RAID
+#### RAID
 
 A redundant array of independent disks (RAID) combines multiple physical hard drives into a single logical unit to provide data redundancy and improve performance. RAID takes data that is normally stored on a single disk and spreads it out among several drives. If any single disk is lost, the user can recover data from the other disks where the data also resides.
 
 - RAID can also increase the speed of data recovery. Using multiple drives will be faster retrieving requested data instead of relying on just one disk to do the work.
 - A RAID solution can be either hardware-based or software-based. A hardware-based solution requires a specialized hardware controller on the system that contains the RAID drives. The following terms describe how RAID stores data on the various disks:
   - **Parity** - Detects data errors.
+  
   - **Striping** - Writes data across multiple drives.
+  
   - **Mirroring** - Stores duplicate data on a second drive.
+  
+    
 
-#### 6.2.3.4 Spanning Tree
+<img src="https://www.mycloudwiki.com/wp-content/uploads/2016/07/raid.jpg" height=300/>
 
-Redundancy increases the availability of the infrastructure by protecting the network from a single point of failure, such as a failed network cable or a failed switch. When designers build physical redundancy in to a network, loops and duplicate frames occur. Loops and duplicate frames have severe consequences for a switched network.
 
-Spanning Tree Protocol (STP) addresses these issues. The basic function of STP is to prevent loops on a network when switches interconnect via multiple paths. STP *ensures that redundant physical links are loop-free*. It ensures that there is only one logical path between all destinations on the network. STP intentionally blocks redundant paths that could cause a loop.
+
+#### Spanning Tree
+
+verhoogt beschikbaarheid (**availbality**) door netwerk tegen een **single point of failure** te beschermen. dit punt kan een switch of netwerk kabel zijn.
+
+probleem => bij fysieke redundancy in een netwerk komen vaak loops en duplicate frame errors voor wat zware gevolgen kan hebben voor **switched networks**.
+
+oplossing => **Spanning Tree Protocol (STP) => The basic function of STP is to prevent loops on a network when switches interconnect via multiple paths. STP ensures that redundant physical links are loop-free.** It ensures that there is only one logical path between all destinations on the network. STP intentionally blocks redundant paths that could cause a loop.
 
 Blocking the redundant paths is critical to preventing loops on the network. The physical paths still exist to provide redundancy, but STP disables these paths to prevent the loops from occurring. If a network cable or switch fails, STP recalculates the paths and unblocks the necessary ports to allow the redundant path to become active.
 
@@ -186,17 +199,17 @@ Blocking the redundant paths is critical to preventing loops on the network. The
 
   <img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606038436/Untitled_Diagram-Page-2_3_fmwumd.png" width=400/>
 
-#### 6.2.3.5 Router Redundancy
+#### Router Redundancy
 
-The default gateway is typically the router that provides devices access to the rest of the network or to the Internet. If there is only one router serving as the default gateway, it is a single point of failure. The organization can choose to install an additional standby router.
+The default gateway is typically the router that provides devices access to the rest of the network or to the Internet. If there is only one router serving as the default gateway, it is a **single point of failure**. The organization can choose to install an additional standby router.
 
-below the forwarding router and the standby router use a redundancy protocol to determine which router should take the active role in forwarding traffic. Each router is configured with a physical IP address and a virtual router IP address. End devices use the virtual IP address as the default gateway. The forwarding router is listening for traffic addressed to 192.0.2.100. The forwarding router and the standby router use their physical IP addresses to send periodic messages. The purpose of these messages is to make sure both are still online and available. If the standby router no longer receives these periodic messages from the forwarding router, the standby router will assume the forwarding role
+below the forwarding router and the standby router use a **redundancy protocol** to determine which router should take the active role in forwarding traffic. Each router is configured with a physical IP address and a virtual router IP address. End devices use the virtual IP address as the default gateway. The forwarding router is listening for traffic addressed to 192.0.2.100. The forwarding router and the standby router use their physical IP addresses to send periodic messages. The purpose of these messages is to make sure both are still online and available. If the standby router no longer receives these periodic messages from the forwarding router, the standby router will assume the forwarding role
 
 The ability of a network to dynamically recover from the failure of a device acting as a default gateway is known as **first-hop redundancy.**
 
 <img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606038748/Screenshot_2020-11-22_105216_hei9wi.png" width=450>
 
-#### 6.2.3.6 Router Redundancy Options
+#### Router Redundancy Options
 
 The following list defines the options available for router redundancy based on the protocol that defines communication between network devices:
 
@@ -206,9 +219,11 @@ The following list defines the options available for router redundancy based on 
 
 - **Gateway Load Balancing Protocol (GLBP)** - GLBP protects data traffic from a failed router or circuit, like HSRP and VRRP, while also allowing load balancing (also called load sharing) between a group of redundant routers.
 
-### 6.2.4 System Resilience
+### 2.4 System Resilience / weerstand
 
-resilience *is the methods and configurations used to make a system or network tolerant of failure*. For example, a network can have redundant links between switches running STP. Although STP does provide an alternate path through the network if a link fails, the switchover may not be immediate if the configuration is not optimal.
+resilience **is the methods and configurations used to make a system or network tolerant of failure.** 
+
+> For example, a network can have redundant links between switches running STP. Although STP does provide an alternate path through the network if a link fails, the switchover may not be immediate if the configuration is not optimal.
 
 Routing protocols also provide resiliency, but fine-tuning can improve the switchover so that network users do not notice. Administrators should investigate non-default settings in a test network to see if they can improve network recovery times.
 
@@ -222,13 +237,16 @@ Many organizations try to balance out the cost of achieving the resiliency of ap
 
 
 
-## 6.3 Incident Response
+## 3 Incident Response
 
-### 6.3.1 Incident Response Phases
+### 3.1 Incident Response Phases
 
-Incident response is the procedures that an organization follows after an event occurs outside the normal range. A data breach releases information to an untrusted environment. A data breach can occur as the result of an accidental or intentional act. A data breach occurs anytime an unauthorized person copies, transmits, views, steals, or accesses sensitive information.
+procedure gevolgd door organisaties wanneer een buitengewoon event plaatsvindt. 
 
-When an incident occurs, the organization must know how to respond. An organization needs to develop an **incident response plan** and put together a **Computer Security Incident Response Team (CSIRT)** to manage the response. 
+When an incident occurs, the organization must know how to respond. 
+
+- An organization needs to develop an **incident response plan** 
+- a **Computer Security Incident Response Team (CSIRT)** to manage the response. 
 
 phases:
 
@@ -237,13 +255,13 @@ phases:
 3. Isolate, eradication and recovery
 4. Post-incident follow-up
 
-### 6.3.2 Incident Response Technologies
+### 3.2 Incident Response Technologies
 
-<img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606141025/Untitled_Diagram-Page-2_4_uyoobu.png" width=400/>
+<img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606141025/Untitled_Diagram-Page-2_4_uyoobu.png" height=800/>
 
-#### 6.3.2.1 NAC Network Admission Control
+#### NAC Network Admission Control
 
-- allows authorized users with compliant systems access to the network. A compliant system meets all of the *policy requirements* of the organization. 
+- allows authorized users with compliant systems access to the network. A compliant system meets all of the **policy requirements** of the organization. 
 - NAC evaluates an incoming device against the policies of the network. 
 - NAC quarantines the systems that do not comply and manages the remediation of noncompliant systems.
 - a NAC framework can use the existing network infrastructure and third-party software to enforce the security policy compliance for all endpoints. 
@@ -252,11 +270,11 @@ phases:
   - Operating systems patches and updates
   - Complex password enforcement
 
-#### 6.3.2.2 IDS Intrusion Detection Systems
+#### IDS Intrusion Detection Systems
 
  (intrusion detection system) passively monitor the traffic on a network. The figure shows that an IDS-enabled device copies the traffic stream and analyzes the copied traffic rather than the actual forwarded packets. Working offline, it compares the captured traffic stream with known malicious signatures, similar to software that checks for viruses. Working offline means several things:
 
-- IDS works passively
+- IDS **works passively**
 
 - IDS device is physically positioned in the network so that traffic must be mirrored in order to reach it
 
@@ -267,9 +285,9 @@ Passive means that the IDS monitors and reports on traffic. It does not take any
 - The advantage of operating with a copy of the traffic is that the IDS does not negatively affect the packet flow of the forwarded traffic. 
 - The disadvantage of operating on a copy of the traffic is that the IDS cannot stop malicious single-packet attacks from reaching the target before responding to the attack. An IDS often requires assistance from other networking devices, such as routers and firewalls, to respond to an attack.
 
-#### 6.3.2.3 IPS Intrusion Prevention Systems
+#### IPS Intrusion Prevention Systems
 
-a device that can immediately detect and stop an attack.  An IPS device operates in inline mode. This means that all incoming and outgoing traffic must flow through it for processing. As shown in the figure, an IPS does not allow packets to enter the trusted side of the network unless it has analyzed the packets. It can detect and immediately address a network problem.
+a device that can immediately detect and stop an attack.  An IPS device operates in **inline mode**. This means that all incoming and outgoing traffic must flow through it for processing. As shown in the figure, an IPS does not allow packets to enter the trusted side of the network unless it has analyzed the packets. It can detect and immediately address a network problem.
 
 An IPS monitors network traffic. It analyzes the contents and the payload of the packets for more sophisticated embedded attacks that might include malicious data. Some systems use a blend of detection technologies, including signature-based, profile-based, and protocol analysis-based intrusion detection. This deeper analysis enables the IPS to identify, stop, and block attacks that would pass through a traditional firewall device. When a packet comes in through an interface on an IPS, *the outbound or trusted interface does not receive that packet until the IPS analyzes the packet.*
 
@@ -278,11 +296,11 @@ An IPS monitors network traffic. It analyzes the contents and the payload of the
 
 The biggest difference between IDS and IPS is that an IPS responds immediately and does not allow any malicious traffic to pass, whereas an IDS allows malicious traffic to pass before addressing the problem.
 
-#### 6.3.2.4 NetFlow and IPFIX
+#### NetFlow and IPFIX
 
 unimportant
 
-#### 6.3.2.5 Advanced Threat Intelligence
+#### Advanced Threat Intelligence
 
 can help organizations detect attacks during one of the stages of the cyberattack and sometimes before with the right information.
 
@@ -298,29 +316,17 @@ Organizations may be able to detect indicators of attack in its logs and system 
 
 Advanced threat intelligence is a type of event or profile data that can contribute to security monitoring and response. As the cyber criminals become more sophisticated, it is important to understand the malware maneuvers. With improved visibility into attack methodologies, an organization can respond more quickly to incidents.
 
-## 6.4 Disaster Recovery
+## 4 Disaster Recovery
 
-### 6.4.1 Disasters Recovery Planning
+### Disasters Recovery Planning
 
-#### 6.4.1.1 Disaster Recovery Plan
+#### Disaster Recovery Plan
 
 An organization puts its disaster recovery plan (DRP) into action while the disaster is ongoing and employees are scrambling to ensure critical systems are online. The DRP includes the activities the organization takes to assess, salvage, repair, and restore damaged facilities or assets.
 
-To create the DRP, answer the following questions:
+**A DRP needs to identify which processes in the organization are the most critical. During the recovery process, the organization restores its mission critical systems first**
 
-- Who is responsible for this process?
-
-- What does the individual need to perform the process?
-
-- Where does the individual perform this process?
-
-- What is the process?
-
-- Why is the process critical?
-
-A DRP needs to identify which processes in the organization are the most critical. During the recovery process, the organization restores its mission critical systems first
-
-#### 6.4.1.2 Implementing Disaster Recovery Controls
+#### Implementing Disaster Recovery Controls
 
 Disaster recovery controls minimize the effects of a disaster to ensure that resources and business processes can resume operation.
 
@@ -332,46 +338,44 @@ There are three types of IT disaster recovery controls:
 
 - **Corrective measures** include controls that restore the system after a disaster or an event.
 
-### 6.4.2 Business Continuity Planning
+### Business Continuity Planning
 
-#### 6.4.2.1 Need for Business Continuity
+business continuity goes a step further than DRP because it means making sure that critical process continue. 
 
 A business continuity plan is a broader plan than a DRP because it includes getting critical systems to another location while repair of the original facility is under way. Personnel continue to perform all business processes in an alternate manner until normal operations resume.
 
 Availability ensures that the resources required to keep the organization going will continue to be available to the personnel and the systems that rely on them.
 
-#### 6.4.2.2 Business Continuity Considerations
+#### Business Continuity Considerations
 
-Business continuity controls are more than just *backing up data and providing redundant hardware*. Organizations need employees to properly configure and operate systems. Data can be useless until it provides information. An organization should look at the following:
+Business continuity controls are **more than just backing up data and providing redundant hardware**. Organizations need employees to properly configure and operate systems. Data can be useless until it provides information. An organization should look at the following:
 
-- Getting the right people to the right places
+- Documentatie configuraties
 
-- Documenting configurations
+- zorg voor alternatieve communicatiekanalen 
 
-- Establishing alternate communications channels for both voice and data
+- Stroomvoorzieningen failsafe maken
 
-- Providing power
+- Nagaan wat de impact voor de applicaties zijn
 
-- Identifying all dependencies for applications and processes so that they are properly understood
+- Nagaan hoe geautomatiseerde taken (tijdelijk) handmatig kunnen overgenomen worden.
 
-- Understanding how to carry out automated tasks manually
-
-#### 6.4.2.3 Business Continuity Best Practices
+#### Business Continuity Best Practices
 
 As shown in the figure, the National Institute of Standards and Technology (NIST) developed the following best practices:
 
 <img src="https://res.cloudinary.com/dri8yyakb/image/upload/v1606141682/Screenshot_2020-11-23_152743_nqthnc.png" width=400/>
 
-## 6.5 reconnaissance and enumeration 
+## 5 reconnaissance and enumeration 
 
  reconnaissance :arrow_right: scanning :arrow_right: gain access :arrow_right: maintain access :arrow_right: clear tracks ​
 
-### 6.5.1 reconnaissance 
+### 5.1 reconnaissance 
 
 - passive = no direct interaction with target
 - active = direct interaction with target
 
-### 6.5.2 scanning
+### 5.2 scanning
 
 thanks to the previous step we now know what to scan 
 
@@ -384,7 +388,7 @@ scanning types :
 - network scanning 
 - vulnerability scanning 
 
-#### 6.5.2.1 scanning tools
+#### scanning tools
 
 **ping** : can be used to find out certain thresholds for data reception
 
@@ -442,7 +446,7 @@ Address: 2a02:26f0:1b00::5c7b:ee68
 
 - port = gateway through which an application of service communicates via a network 
 
-### 6.5.3 enumeration 
+### 5.3 enumeration 
 
 - after scanning
 - which services are being used ? 

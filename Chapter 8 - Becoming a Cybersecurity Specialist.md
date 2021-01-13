@@ -1,56 +1,48 @@
 # Chapter 8 Becoming a Cybersecurity Specialist
 
-## 8.0 Introduction
-
-### 8.0.1 Welcome
-
-#### 8.0.1.1 Chapter 8: Becoming a Cybersecurity Specialist
-
 ## 8.1 Cybersecurity Domains
 
-### 8.1.1 User Domain
+### User Domain
 
-#### 8.1.1.1 Common User Threats and Vulnerabilities
+- users with access to data of the organization
+- often weakest link for cybersecurity
 
-#### 8.1.1.2 Managing User Threats
+### Device Domain
 
-### 8.1.2 Device Domain
+- unguarded devices
+- user downloads
+- malware
+- non authorized usage of devices ...
 
-#### 8.1.2.1 Common Threats to Devices
+### Local Area Network Domain
 
-#### 8.1.2.2 Managing Device Threats
+- unauthorized access to the network
+- unauthorized scanning of ports and network reconnaissance 
 
-### 8.1.3 Local Area Network Domain
+### Private Cloud (WAN) Domain
 
-#### 8.1.3.1 Common Threats to the LAN
+- Onbevoegd netwerkonderzoek, scannen van poorten en toegang 
+- Kwetsbaarheden of foute configuratie in de software van routers, firewalls en besturingssystemen
+- Gebruikers op afstand die inloggen op de infrastructuur van de organisatie en gevoelige informatie downloaden
 
-#### 8.1.3.2 Managing Threats to the LAN
+### Public Cloud Domain
 
-### 8.1.4 Private Cloud (WAN) Domain
+- Datalekken, verlies of diefstal van intellectuele eigendommen, en gelekte of gekraakte inloggegevens
+- **Federatieve identiteitsopslagplaatsen** zijn een gegeerd doel
+- Kapen van accounts, social engineering en gebrek aan inzicht aan de kant van de organisatie
 
-#### 8.1.4.1 Common Threats to the Private Cloud
+### Physical Facilities Domain
 
-#### 8.1.4.2 Managing Threats to the Private Cloud
+- Natuurlijke bedreigingen zoals onweer, geologische bedreigingen (aardbeving, overstroming, ...) en elektriciteitsonderbrekingen
+- Onbevoegde toegang, diefstal, niet afgeschermd datacenter, gebrek aan bewaking
+- Social engineering, schending van de elektrische begrenzing
 
-### 8.1.5 Public Cloud Domain
+### Application Domain
 
-#### 8.1.5.1 Common Threats to the Public Cloud
-
-#### 8.1.5.2 Managing Threats to the Public Cloud
-
-### 8.1.6 Physical Facilities Domain
-
-#### 8.1.6.1 Common Threats to Physical Facilities
-
-#### 8.1.6.2 Managing Threats to Physical Facilities
-
-### 8.1.7 Application Domain
-
-#### 8.1.7.1 Common Threats to Applications
-
-#### 8.1.7.2 Managing Threats to Applications
-
-#### 8.1.7.3 Activity - Matching Cybersecurity Domains
+- Onbevoegde toegang tot data centers, computers, elektriciteitscabines
+- Server downtime voor onderhoud, IT systemen zijn offline voor langere periodes
+- Kwetsbaarheden in het besturingssysteem voor netwerkapparatuur
+- Verlies van data
 
 ## 8.2 Understanding the Ethics of Working in Cybersecurity
 
@@ -92,28 +84,24 @@
 
 #### 8.2.4.1 Vulnerability Scanners
 
+onderzoekt computers, netwerken en programma’s naar kwetsbaarheden en geeft deze in een lijst met prioriteiten terug
+
 #### 8.2.4.2 Penetration Testing
+
+het testen of er zwakheden zijn in systemen door het gebruik van hacktechnieken. Een cybersecurity specialist probeert een systeem te kraken zonder weet van gebruikersnamen, paswoorden of andere normale inlogmogelijkheden
 
 #### 8.2.4.3 Packet Analyzers
 
+onderscheppen enloggen netwerkverkeer. Het toont de inhoud van elk verstuurd pakket op dat netwerk. Dit kan zowel op bedrade als draadloze netwerken.
+
 #### 8.2.4.4 Security Tools
 
-#### 8.2.4.5 Activity - Using the Appropriate Tool
+er zijn ontelbare security tools beschikbaar. Het is de verantwoordelijkheid van de cybersecurity specialist om te weten wanneer hij welke tool moet gebruiken en dit ook op de juiste manier doet. 
 
-## 8.3 Next Step
+## 8.3 Defining the Roles of Cybersecurity Professionals
 
-### 8.3.1 Exploring the Cyber Security Profession
-
-#### 8.3.1.1 Defining the Roles of Cybersecurity Professionals
-
-#### 8.3.1.2 Job Search Tools
-
-#### 8.3.1.3 Packet Tracer - Skills Integration Challenge
-
-## 8.4 Summary
-
-### 8.4.1 Conclusion
-
-#### 8.4.1.1 Before You Go
-
-#### 8.4.1.2 Chapter 8: Becoming a Cybersecurity Specialist
+- **Vulnerability Assessor**
+- **Threat Analyst** identificeer, verzamel en analyseer je de informatie over dreigingen tegen het netwerk.
+- **Incident Handler** ga je op zoek naar mogelijke aanvallen, door het doorzoeken van de beschikbare logs en van allerhande veiligheidsmeldingen.
+- **Digital Forensics Analyst** spits je je volledig toe op het onderzoek van images van geheugen of harde schijven.
+- **Malware Analyst** voer je gedetailleerde analyses uit van malware.
